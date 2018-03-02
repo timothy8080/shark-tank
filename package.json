@@ -10,9 +10,9 @@
   "author": "Timothy Cauwe",
   "license": "ISC",
   "dependencies":{
-      "express":"*",
-      "body-parser":"*",
-      "merge-descriptors":"*",
-      "finalhandler":"*"
+      "express":"~4.16.2"
+      "morgan":"~1.9.0"
+      "cookie-parser":"~1.4.3",
+      "body-parser":"~1.18.2"
   }
 }
