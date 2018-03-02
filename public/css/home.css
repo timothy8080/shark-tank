@@ -1,6 +1,8 @@
 body {
     background-color: #E0E0E0;
     font-family: "Segoe UI", "Roboto", sans-serif;
+    background-image: url("https://images6.alphacoders.com/476/thumb-350-476225.jpg");
+    background-size: cover;
 }
 
 h1 {
@@ -26,6 +28,9 @@ h3 {
 #bar a {
     text-decoration: none;
     color: #222222;
+    line-height: 100%;
+    vertical-align: middle;
+    padding: 0px 10px;
 }
 
 #content {
