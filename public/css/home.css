@@ -23,6 +23,11 @@ h3 {
     color: #616161;
 }
 
+#bar a {
+    text-decoration: none;
+    color: #222222;
+}
+
 #content {
     position: absolute;
     top: 60px;
