@@ -1,7 +1,7 @@
 body {
     background-color: #E0E0E0;
     font-family: "Segoe UI", "Roboto", sans-serif;
-    background-image: url("https://images6.alphacoders.com/476/thumb-350-476225.jpg");
+    background-image: url("../../public/img/bg.jpg");
     background-size: cover;
 }
 
