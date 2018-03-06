@@ -9,7 +9,7 @@ router.get('/signup', function(req, res, next) {
 });
 
 router.post("/signup", function(req, res, next) {
-    mongolib.createUser(req.body.username, req.body.passwd);
+    mongolib.createUser(req.body.username, req.body.passwd, req.body.email, req.body.credcard);
     res.redirect("/login");
 });
 
