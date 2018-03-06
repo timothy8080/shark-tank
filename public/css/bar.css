@@ -1,0 +1,23 @@
+#bar {
+    width: 100%;
+    background-color:#3F51B5;
+    height: 60px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: #616161;
+}
+
+#bar a {
+    text-decoration: none;
+    color: #222222;
+    line-height: 100%;
+    vertical-align: middle;
+    padding: 0px 10px;
+}
+
+.right {
+    float: right;
+}
