@@ -9,8 +9,8 @@ router.get('/signup', function(req, res, next) {
 });
 
 router.post("/signup", function(req, res, next) {
-    mongolib.createUser(req.body.username, req.body.password);
-    res.send("success, the username is " + req.body.username);
+    mongolib.createUser(req.body.username, req.body.passwd);
+    res.send("success, here is your password for everyone to see " + req.body.passwd);
 });
 
 module.exports = router;
