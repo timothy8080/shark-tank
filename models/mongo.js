@@ -16,12 +16,14 @@ exports.findUser = function(username, password, cb){
         const collection = client.db("shark-tank").collection("users");
         collection.find({'username':username, "password":password}, function(err, cursor){
             cursor.toArray(function(err, arr){
+                console.log("ARR:")
+                console.log(arr);
                 if (!arr.length){
                     cb(false);
                 } else {
                     cb(arr[0]);
                 }
-                db.close();
+                client.close();
             });
             
         });
