@@ -6,4 +6,8 @@ router.get('/signup', function(req, res, next) {
   res.render('signup', { title: 'Express' });
 });
 
+router.post("/signup", function(req, res, next) {
+  res.send("success, the username is " + req.body.username);
+});
+
 module.exports = router;
