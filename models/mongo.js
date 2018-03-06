@@ -13,16 +13,17 @@ exports.createUser = function(username, password, email, creditcard){
 
 exports.findUser = function(username, password, cb){
     MongoClient.connect(uri, function(err, client) {
-    const collection = client.db("shark-tank").collection("users");
-    collection.find({'username':username, "password":password}, function(err, cursor){
-        cursor.toArray(function(err, arr){
-            if (!arr.length){
-                cb(false);
-            } else {
-                cb(arr[0]);
-            }
-            db.close();
+        const collection = client.db("shark-tank").collection("users");
+        collection.find({'username':username, "password":password}, function(err, cursor){
+            cursor.toArray(function(err, arr){
+                if (!arr.length){
+                    cb(false);
+                } else {
+                    cb(arr[0]);
+                }
+                db.close();
+            });
+            
         });
-        
     });
 }
