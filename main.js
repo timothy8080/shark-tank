@@ -8,6 +8,7 @@ var app = express();
 
 var index = require('./routes/index');
 var buy = require('./routes/buy-now');
+var signup = require('./routes/signup');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -18,8 +19,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
-app.use('/buy', buy);
+app.use(index);
+app.use(signup);
+app.use(buy);
 
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
