@@ -10,6 +10,7 @@ var index = require('./routes/index');
 var buy = require('./routes/buy-now');
 var signup = require('./routes/signup');
 var login = require('./routes/login');
+var about_us = require('./routes/about_us');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -24,6 +25,7 @@ app.use(index);
 app.use(signup);
 app.use(buy);
 app.use(login);
+app.use(about_us);
 
 app.use(function(req, res, next) {
   var err = new Error('404 Not Found');
