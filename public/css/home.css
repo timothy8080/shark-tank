@@ -19,18 +19,18 @@ h3 {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 60vw;
     text-align: center;
 }
 
 #grabber button {
     padding: 15px 30px;
-    border: 1px solid #222222;
+    border: none;
     outline: none;
     font-size: 20px;
-    -webkit-transition: background-color 2s, color 2s;
-    -moz-transition: background-color 2s, color 2s;
-    transition: background-color 2s, color 2s;
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    -moz-transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
     cursor: pointer;
 }
 
