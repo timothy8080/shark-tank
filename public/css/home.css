@@ -37,6 +37,7 @@ h3 {
 #grabber button:hover {
     background-color:#101010;
     color: #eeeeee;
+    border-radius: 2px;
     border: 1px solid #eeeeee;
 }
 
