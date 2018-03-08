@@ -13,6 +13,7 @@
 }
 
 #bar a {
+    float: left;
     text-decoration: none;
     color: #eeeeee;
     line-height: 60px;
@@ -28,6 +29,7 @@
     vertical-align: center;
     margin: 0;
     padding: 0px 10px;
+    float: left;
 }
 
 .right {
