@@ -9,6 +9,7 @@
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     text-decoration: none;
     color: #616161;
+    font-family: "Segoe UI", "Roboto", sans-serif;
 }
 
 #bar a {
@@ -16,6 +17,14 @@
     color: #eeeeee;
     line-height: 60px;
     vertical-align: middle;
+    padding: 0px 10px;
+}
+
+#bar h2 {
+    display: inline-block;
+    color: #eeeeee;
+    line-height: 60px;
+    vertical-align: center;
     padding: 0px 10px;
 }
 
