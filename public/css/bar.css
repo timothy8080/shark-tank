@@ -18,6 +18,7 @@
     line-height: 60px;
     vertical-align: middle;
     padding: 0px 10px;
+    font-size: 15px;
 }
 
 #bar h2 {
@@ -25,6 +26,7 @@
     color: #eeeeee;
     line-height: 60px;
     vertical-align: center;
+    margin: 0;
     padding: 0px 10px;
 }
 
