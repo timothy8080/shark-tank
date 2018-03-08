@@ -25,7 +25,7 @@ h3 {
 
 #grabber button {
     padding: 15px 30px;
-    border: 1px solid #101010;
+    border: 1px solid transparent;
     outline: none;
     font-size: 20px;
     -webkit-transition: background-color 0.5s, color 0.5s;
