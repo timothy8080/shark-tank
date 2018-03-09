@@ -13,6 +13,9 @@ h3 {
 }
 
 #content:before {
+    width: 100%;
+    height: calc(100vh - 60px);
+
     content: "";
     display: block;
     background-image: url("/img/background.jpg");
@@ -24,6 +27,8 @@ h3 {
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
     filter: blur(5px);
+
+    
 }
 
 #grabber {
