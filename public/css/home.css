@@ -5,11 +5,13 @@ body {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 60px;
+    margin: 10px 0px;
 }
 
 h3 {
     font-size: 25px;
+    margin: 10px 0px;
 }
 
 #content:before {
@@ -29,7 +31,15 @@ h3 {
     -ms-filter: blur(15px);
     filter: blur(15px);
 
-    
+    transition: filter 2s;
+}
+
+#content:hover {
+    -webkit-filter: brightness(0.4), blur(15px);
+    -moz-filter: brightness(0.4), blur(15px);
+    -o-filter: brightness(0.4), blur(15px);
+    -ms-filter: brightness(0.4), blur(15px);
+    filter: brightness(0.4), blur(15px);
 }
 
 #grabber {
