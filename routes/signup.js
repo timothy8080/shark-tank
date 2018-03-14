@@ -5,7 +5,7 @@ var mongolib = require("../models/mongo");
 
 /* GET home page. */
 router.get('/signup', function(req, res, next) {
-  res.render('signup', { title: 'Express' });
+  res.render('signup', { title: 'Express', logged:false });
 });
 
 router.post("/signup", function(req, res, next) {
