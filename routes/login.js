@@ -13,6 +13,7 @@ router.post("/login", function(req, res, next) {
         if (!usr){
             res.send("not found");
         } else {
+            req.session.user = req.body;
             res.send("success, your email is, " + usr.email);
         }
     })
