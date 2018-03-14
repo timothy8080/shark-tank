@@ -7,6 +7,10 @@
     <a href="/about_us" >About us</a>
     <a href="/about_product" >About product</a>
 
-    <a href="/login" class="right">Login</a>
-    <a href="/signup" class="right">Sign Up</a>
+    <% if (logged){ %>
+        <span class="right">Welcome, <%= username %></span>
+    <% } else { %>
+        <a href="/login" class="right">Login</a>
+        <a href="/signup" class="right">Sign Up</a>
+    <% } %>
 </div>
