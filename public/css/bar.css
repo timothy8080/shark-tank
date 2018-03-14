@@ -12,7 +12,7 @@
     font-family: "Segoe UI", "Roboto", sans-serif;
 }
 
-#bar a {
+#bar a, span {
     text-decoration: none;
     color: #eeeeee;
     line-height: 60px;
