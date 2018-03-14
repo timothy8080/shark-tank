@@ -6,34 +6,37 @@
   </head>
   <body>
     <% include header %>
+    <div id="content">
     <h1>Sign up</h1>
 
     <form method="post" action="/signup">
-      First name:<br>
-      <input type="text" name="firstname"><br/>
-      Last name:<br>
-      <input type="text" name="lastname"><br/>
-      City:<br>
-      <input type="text" name="city"><br>
-      Address:<br>
-      <input type="text" name="addr"><br/>
-      Credit card:<br/>
-      <input type="password" name="credcard"><br/>
-      E-mail adress:<br/>
-      <input type="email" name="email"><br/>
+      <br>
+      <input type="text" name="firstname" placeholder="First Name"><br/>
+      <br>
+      <input type="text" name="lastname" placeholder="Last Name"><br/>
+      <br>
+      <input type="text" name="city" placeholder="City"><br>
+      <br>
+      <input type="text" name="addr" placeholder="Address"><br/>
+      <br/>
+      <input type="password" name="credcard" placeholder="Credit Card #"><br/>
+      <br/>
+      <input type="email" name="email" placeholder="Email"><br/>
       <form>
-      Date of birth:<br/>
-      <input type="month" name="dob"><br/>
-      Username:<br/>
-      <input type="text" name="username"><br/>
+      <br/>
+      <input type="month" name="dob" placeholder="Date of Birth"><br/>
+      <br/>
+      <input type="text" name="username" placeholder="Username">
+      <br/>
       
-      Password:<br/>
-      <input type="password" name="passwd"><br/>
-      Re enter password:<br/>
-      <input type="password" name="passwd-conf"><br/>
+      <br/>
+      <input type="password" name="passwd" placeholder="Password"><br/>
+      Re enter password:
+      <input type="password" name="passwd-conf" placeholder="Reenter Password"><br/>
 
       <input type="submit" value="Sign Up">
     </form>
+    </div>
   
   </body>
 </html>
