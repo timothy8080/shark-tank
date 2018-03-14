@@ -2,18 +2,21 @@
 <html>
   <head>
     <title>Sign In</title>
+    <link rel="stylesheet" href="/css/signupin.css">
   </head>
   <body>
     <% include header %>
-    <h1>Sign In</h1>
-    <form method="post" action="/login">
-      username:<br>
-      <input type="text" name="username"><br/>
-      password:<br>
-      <input type="password" name="passwd"><br/>
-      <input type="submit" value="Log In">
-    </form>
-    <% if (err){ %>
+    <div id="content">
+      <h1>Sign In</h1>
+      <form method="post" action="/login">
+        <!-- username:<br> -->
+        <input type="text" name="username" placeholder="Username"><br/>
+        <!-- password:<br> -->
+        <input type="password" name="passwd" placeholder="Password"><br/>
+        <input type="submit" value="Log In">
+      </form>
+      <% if (err){ %>
         <p>Invalid Username or Password!</p>
-    <% } %>
+       <% } %>
+    </div>
 </body>
