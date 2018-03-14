@@ -3,8 +3,19 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var path = require('path');
+var session = require('express-session');
 
 var app = express();
+
+app.use(session({
+
+  secret: 'keyboard cat',
+
+  resave: false,
+
+  saveUninitialized: true
+
+}));
 
 var index = require('./routes/index');
 var buy = require('./routes/buy-now');

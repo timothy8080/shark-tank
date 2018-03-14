@@ -17,5 +17,6 @@
       "path":"~0.12.7",
       "ejs": "~2.5.7",
       "mongodb":"~3.0.4"
+      "express-session":"*"
   }
 }
